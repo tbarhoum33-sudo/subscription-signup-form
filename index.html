@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechPulse Newsletter</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="actions.js" defer></script>
+</head>
+<body>
+  <main class="card">
+    <div class="icon">✉️</div>
+    <h1>Stay Ahead of the Future</h1>
+    <p>Get the latest technology news delivered to your inbox.</p>
+
+    <form id="signupForm">
+      <label for="name">Full Name</label>
+      <input id="name" type="text"
+             placeholder="Your name" required>
+
+      <label for="email">Email Address</label>
+      <input id="email" type="email"
+             placeholder="you@example.com" required>
+
+      <label class="terms">
+        <input id="terms" type="checkbox" required>
+        I agree to receive newsletter updates.
+      </label>
+
+      <button type="submit">Subscribe Now</button>
+    </form>
+
+    <p id="message" role="status" aria-live="polite"></p>
+  </main>
+</body>
+</html>
